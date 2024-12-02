@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список Водителей</title>
+</head>
+<body>
+    <h1>Список Водителей</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Surname</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Birthdate</th>
+                <th>Phone Number</th>
+                <th>License Number</th>
+                <th>License Expiry</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for driver in drivers %}
+            <tr>
+                <td>{{ driver.ID }}</td>
+                <td>{{ driver.SURNAME }}</td>
+                <td>{{ driver.FIRSTNAME }}</td>
+                <td>{{ driver.LASTNAME }}</td>
+                <td>{{ driver.BIRTHDATE }}</td>
+                <td>{{ driver.PHONE_NUMBER }}</td>
+                <td>{{ driver.LICENSE_NUM }}</td>
+                <td>{{ driver.LICENSE_EXP }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/">Вернуться на главную</a>
+</body>
+</html>

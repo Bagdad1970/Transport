@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список Маршрутов</title>
+</head>
+<body>
+    <h1>Список Маршрутов</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Driver ID</th>
+                <th>Start Location</th>
+                <th>End Location</th>
+                <th>Distance</th>
+                <th>Start Datetime</th>
+                <th>End Datetime</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for route in routes %}
+            <tr>
+                <td>{{ route.ID }}</td>
+                <td>{{ route.DRIVER_ID }}</td>
+                <td>{{ route.START_LOCATION }}</td>
+                <td>{{ route.END_LOCATION }}</td>
+                <td>{{ route.DISTANCE }}</td>
+                <td>{{ route.START_DATETIME }}</td>
+                <td>{{ route.END_DATETIME }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/">Вернуться на главную</a>
+</body>
+</html>

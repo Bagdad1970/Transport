@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Импорт JSON</title>
+</head>
+<body>
+    <h1>Импорт данных в таблицу ROUTES</h1>
+    <form action="/import_routes" method="POST" enctype="multipart/form-data">
+        <label for="json_file">Выберите JSON-файл:</label>
+        <input type="file" name="json_file" id="json_file" accept="application/json" required>
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+</html>

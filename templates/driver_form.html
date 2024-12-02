@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить данные</title>
+</head>
+<body>
+    <h1>Добавление данных в таблицу</h1>
+    <form method="POST">
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" value="Каупервуд" required>
+        <br><br>
+        <label for="firstname">Имя:</label>
+        <input type="text" id="firstname" name="firstname" value="Фрэнк" required >
+        <br><br>
+        <label for="lastname">Отчество:</label>
+        <input type="text" id="lastname" name="lastname" value="Алджернон" required>
+        <br><br>
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" value="1840-12-09" required>
+        <br><br>
+        <label for="phone_number">Номер телефона:</label>
+        <input type="text" id="phone_number" name="phone_number" value="+1(123)456-34-98" required>
+        <br><br>
+        <label for="license_num">Номер лицензии:</label>
+        <input type="text" id="license_num" name="license_num" value="0F76A843" required>
+        <br><br>
+        <label for="license_exp">Срок истечения лицензии:</label>
+        <input type="date" id="license_exp" name="license_exp" value="2000-10-09" required>
+        <br><br>
+        <button type="submit">Добавить</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+</body>
+</html>

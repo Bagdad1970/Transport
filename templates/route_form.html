@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить данные</title>
+</head>
+<body>
+    <h1>Добавление данных в таблицу</h1>
+    <form method="POST">
+        <label for="driver_id">ID водителя:</label>
+        <input type="text" id="driver_id" name="driver_id" value="1" required>
+        <br><br>
+        <label for="start_location">Начальная точка:</label>
+        <input type="text" id="start_location" name="start_location" value="г. Филадельфия" required>
+        <br><br>
+        <label for="end_location">Конечная точка:</label>
+        <input type="text" id="end_location" name="end_location" value="г. Чикаго" required >
+        <br><br>
+        <label for="distance">Расстояние:</label>
+        <input type="text" id="distance" name="distance" value="490.7" required>
+        <br><br>
+        <label for="start_datetime">Время отправления:</label>
+        <input type="text" id="start_datetime" name="start_datetime" value="1870-12-09" required>
+        <br><br>
+        <label for="end_datetime">Время прибытия:</label>
+        <input type="text" id="end_datetime" name="end_datetime" value="1871-01-3" required>
+        <br><br>
+        <button type="submit">Добавить</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
