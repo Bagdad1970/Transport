@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect('transport.db')
+connection = sqlite3.connect('../transport.db')
 cursor = connection.cursor()
 
 def insert_into_drivers():
@@ -46,6 +46,8 @@ def main():
     insert_into_drivers()
     insert_into_routes()
     insert_into_vehicles()
+
+
 
 if __name__ == '__main__':
     main()

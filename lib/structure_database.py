@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect('transport.db')
+connection = sqlite3.connect('../transport.db')
 cursor = connection.cursor()
 
 def create_table_drivers():
